@@ -1,0 +1,86 @@
+.register label{
+    color: rgb(12, 173, 79);
+}
+
+.register input{
+    border-radius: 1px;
+    border: none;
+    height: 30px;
+}
+
+.col-lg-6 .register{
+    margin-top: 10px;
+    margin-left: 110px;
+    margin-right: 140px;
+}
+
+.register{
+    background-color: #1e1e1e ;
+    height: 500px;
+    width: 430px;
+    margin-left: 107.5px;
+}
+
+img{
+    height: 500px;
+    width: 650px;
+    overflow: hidden;
+}
+
+.overlay{
+    background-color: #1e1e1e;
+    height: 500px ;
+    width: 650px;
+    z-index: 2;
+}
+
+a{
+    color: rgb(12, 173, 79);
+}
+
+
+.container{
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 100vh;
+    margin-right: 50px;
+}
+
+span{
+    color: beige;
+}
+
+.btn{
+    background-color: rgb(12, 173, 79);
+    border: none;
+}
+
+
+h1{
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-right: 70px;
+    color: rgb(12, 173, 79);
+    font-weight: 800;
+    font-size: 50px;
+}
+
+span{
+    color: beige;
+}
+
+.btn:hover{
+    background-color: #1e1e1e;
+    border: 1px solid rgb(12, 173, 79);
+}
+
+.text-danger{
+    padding: 0;
+}

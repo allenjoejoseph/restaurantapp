@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row" >
+        <div class="form d-flex">
+            <div class="col-lg-6 register" >
+                <h1><span>New Here?</span> Sign-Up Now!</h1>
+                <form [formGroup]="registerForm" (ngSubmit)="register()">
+                    <label for="email">EMAIL</label>
+                    <input name="email" formControlName="email" type="email" placeholder="Enter The Email" required>
+                    <div *ngIf="this.registerForm.get('email')?.errors&& this.registerForm.get('email')?.touched" class="text-danger" style="font-size: 11px;">Invalid Email</div>
+                    <br>
+                    <label for="password">PASSWORD</label>
+                    <input name="password" formControlName="password" type="password" placeholder="Enter The Password" required>
+                    <div *ngIf="this.registerForm.get('password')?.errors&& this.registerForm.get('password')?.touched" class="text-danger" style="font-size: 11px;">Invalid Password</div>
+                    <br>
+                    <div class="mt-4">
+                        <button  type="submit" class="btn btn-primary">
+                            Sign Up
+                        </button>
+                        <span class="ms-2">
+                           Already a User? <a routerLink="/items/login">Login Here</a>
+                        </span>
+                      </div>
+                </form>
+            </div>
+           <div class="overlay">
+                <div class="cropped"  style="margin: 0;">
+                        <img class="col-lg-6" src="https://media.istockphoto.com/id/1271562227/photo/indian-food-curry-butter-chicken-palak-paneer-chiken-tikka-biryani-vegetable-curry-papad-dal.jpg?s=612x612&w=0&k=20&c=hs0V6lCK5Ypm5O4gpmtpxPVdiWn-HisvSvPIlg5G6WQ=" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

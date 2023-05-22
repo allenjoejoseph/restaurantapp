@@ -1,0 +1,64 @@
+.title{
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #eeeeee;
+    opacity: 0.95;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 50px;
+}
+
+.btn-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 800px;
+    margin-top: -40px;
+}
+
+.btn-1 a{
+    color: #eeeeee;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+#login:hover{
+    color: rgb(12, 173, 79);
+}
+
+#cart:hover{
+    color: rgb(12, 173, 79);
+}
+
+#contact:hover{
+    color: rgb(12, 173, 79);
+}
+
+h1:hover{
+    cursor: pointer;
+}
+
+#btn-signup{
+    background-color: rgb(12, 173, 79);
+}
+
+#btn-signup:hover{
+    border: 1px solid beige;
+}
+
+.form-control{
+    margin-left: -32rem;
+    margin-top: -1.5rem;
+    background-color: transparent;
+    border-radius: 25px;
+    color: #eeeeee;
+}
+
+.form-control:focus{
+    border-color: rgb(12, 173, 79);
+}
+
+.form-control::placeholder{
+    color: rgb(12, 173, 79);
+}

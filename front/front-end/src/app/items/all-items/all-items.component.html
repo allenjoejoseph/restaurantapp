@@ -1,0 +1,87 @@
+<div *ngIf="searchTerm==''">
+    <div class="res-name">
+        <h1 class="title">SAZÓN</h1>
+        <h4 class="subtitle"> A TASTE OF AUTHENTICITY</h4>
+        <div class="bg-img">
+            <img class="img-2" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/38b1a593253623.5e5fe5738ff29.png" alt="">
+            <!-- <img class="img-2" src="https://www.pngkit.com/png/full/474-4741109_the-beginning-of-mamas-southern-soul-food-drawing.png" alt=""> -->
+        </div>
+    </div>
+    
+    <div class="container-box">
+        <div class="img-1">
+            <img src="https://media.discordapp.net/attachments/1056137916864282697/1108829830570586162/Red_Yellow_Food_Leaderboard_Ad_.png?width=1025&height=127" alt="">
+        </div>
+        <!-- <div class="row row-1">
+            <img src="https://media.istockphoto.com/id/1278998606/photo/fresh-homemade-pizza-margherita.jpg?b=1&s=612x612&w=0&k=20&c=9d3lQQAw4HMRQ-9KnYcRW0IhOFoigggTvEFKb8UlPXQ=" alt="">
+            <img src="https://static.toiimg.com/thumb/53338316.cms?width=1200&height=900" alt="">
+            <img src="https://irisholidays.com/keralatourism/wp-content/uploads/2015/05/dosa-idli-food-in-kerala.gif" alt="">
+            <img src="https://wallpaperaccess.com/full/6175777.jpg" alt="">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/12/Noodles-with-chilli-oil-eggs-6ec34e9.jpg" alt="">
+        </div> -->
+    </div>
+</div>
+
+<div class="features" *ngIf="searchTerm==''">
+    <section class="py-5" id="features">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4  mb-lg-0">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                    <h2 class="h4 fw-bolder">We Serve Hot</h2>
+                    <p class="p-2" style="height: 170px;">Delivering piping-hot deliciousness right to your doorstep. Indulge in a hassle-free food delivery experience with our sizzling selection of mouthwatering dishes.</p>
+                </div>
+                <div class="col-lg-4 mb-lg-0">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                    <h2 class="h4 fw-bolder">Faster Commuting</h2>
+                    <p class="p-2"  style="height: 170px;">Experience the thrill of expedited deliveries with our faster commuting service. We prioritize speed and efficiency to ensure your packages reach their destination in record time.</p>
+                    </div>
+                <div class="col-lg-4 mb-lg-0">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                    <h2 class="h4 fw-bolder">Safe and Sanitized</h2>
+                    <p class="p-2"  style="height: 170px;">We take meticulous precautions to ensure your packages are handled, packaged, and delivered with the highest standards of cleanliness and safety.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div class="container">
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5" *ngFor="let items of allItems | filter : searchTerm : 'name'">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img style="height: 200px;" class="card-img-top" [src]="items.images" [alt]="items.title" />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">{{items.name}}</h5>
+                                <!-- Product price-->
+                                ₹ {{items.price}}
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="d-flex justify-content-evenly">
+                                <!-- View Items -->
+                                <a class="btn btn-outline-light btn-dark mt-auto" routerLink="view-items/{{items.id}}">
+                                    View
+                                </a>
+                                <!-- Cart -->
+                                <button (click)="addtocart(items)" class="btn btn-outline-dark mt-auto">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>

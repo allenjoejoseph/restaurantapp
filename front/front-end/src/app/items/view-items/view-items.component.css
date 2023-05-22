@@ -1,0 +1,23 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    border:4px solid rgba(12,173,79);
+    border-radius: 10%;
+    margin-left: 100px;
+}
+
+h1{
+    color: rgb(12, 173, 79)
+}
+
+span{
+    color: #eeeeee;
+    font-size: 25px;
+}
+
+.lead{
+    color: #eeeeee;
+    font-weight: 600;
+}

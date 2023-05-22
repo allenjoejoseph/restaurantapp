@@ -1,0 +1,31 @@
+<div class="navbar">
+    <div class="row">
+        <h1 class="title" routerLink="">SAZÓN</h1>
+         <div class="btn-1">
+            <li class="nav-item">
+                <!-- searchbox -->
+                <input (keyup)="search($event)" style="width: 400px;" placeholder="Search products here" type="text" class="form-control">
+            </li>
+            <form class="d-flex align-items-center">
+                <!-- Cart -->
+                <a class="btn" id="cart" routerLink="items/cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Cart
+                    <span class="badge bg-light text-dark ms-1 rounded-pill">{{cartItems}}</span>
+                </a>
+                <a class="btn" id="contact" routerLink="items/contact">
+                    Contact Us
+                </a>
+                <!-- Login -->
+                <a class="btn login" id="login" routerLink="items/login">
+                    Login
+                </a>
+                <!-- Register -->
+                <a class="btn " id="btn-signup" routerLink="items/register">
+                    Sign Up
+                </a>
+                
+            </form>
+         </div>
+    </div>
+</div>

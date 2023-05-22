@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 1310px;
+    background: rgba(53, 53, 53, 1.0);
+    background: radial-gradient(at left top, rgba(53, 53, 53, 1.0), rgba(1, 1, 1, 1.0));
+    background-size: contain;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+

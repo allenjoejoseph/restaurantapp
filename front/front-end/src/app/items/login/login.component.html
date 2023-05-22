@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row" >
+        <div class="form d-flex">
+            
+            <div class="col-lg-6" style="margin: 0;">
+                    <img src="https://e0.pxfuel.com/wallpapers/206/969/desktop-wallpaper-chicken-biryani-in-greater-noida-hyderabadi-chicken.jpg" alt="">
+                </div>    
+            <div class="col-lg-6 login" >
+                <h1 ><span>Welcome Back</span> <br>Foodie!</h1>
+                <form class="form-login" [formGroup]="loginForm" (ngSubmit)="login()">
+                    <label for="">EMAIL</label>
+                    <input name="email" formControlName="email" type="email" placeholder="Enter The Email">
+                    <br>
+                    <label for="">PASSWORD</label>
+                    <input name="password" formControlName="password" type="password" placeholder="Enter The Password">
+                    <br>
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary">
+                            Log In
+                        </button>
+                        <span class="ms-2">
+                           New User? <a routerLink="/items/register">Register Here</a>
+                        </span>
+                      </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
